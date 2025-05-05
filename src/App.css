@@ -1,0 +1,231 @@
+#root {
+  box-sizing: border-box;
+  background: url('https://x.boardgamearena.net/data/themereleases/230921-1000/img/layout/back-main_games.jpg') 0% 0% / 267px repeat;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-attachment: fixed;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.topbar {
+  background: -prefixe-linear-gradient(top, #f8f8f8, #e7e9e8);
+  background: linear-gradient(180deg, #f8f8f8, #e7e9e8);
+  -o-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .3);
+  height: 62px;
+  margin-bottom: 8px;
+  width: 100%;
+  z-index: 1053;
+  position: relative;
+}
+
+#left-side-wrapper {
+  float: left;
+  margin-top: 5px;
+  width: 100%;
+}
+
+#left-side {
+  margin-left: 2px;
+  margin-right: 245px;
+  position: relative;
+  margin-top: 0;
+}
+
+#right-side {
+  float: right;
+  margin-left: -240px;
+  margin-top: -5px;
+  width: 240px;
+}
+
+.bg-container {
+  background: lightseagreen;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-attachment: fixed;
+  padding: 3rem;
+}
+
+.possible_cell {
+  background-color: rgba(0, 200, 0, .2);
+  color: dimgray;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.loader-container {
+  background: white;
+  /* Start with white background */
+  background-size: 200% 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-attachment: fixed;
+  padding: 3rem;
+}
+
+.loader-image {
+  height: 270px;
+  width: 390px;
+  display: block;
+  margin: 3rem auto;
+}
+
+.start-button {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.player-name {
+  color: green;
+  font-weight: 500;
+}
+
+.selection-container {
+  gap: 1rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.dice-container {
+  width: 100%;
+  max-width: 690px;
+  padding: 1rem;
+  margin: 2rem auto;
+  display: block;
+  text-align: center;
+  border: 20px groove brown;
+  background-color: seagreen;
+}
+
+.button-container {
+  display: block;
+  text-align: end;
+}
+
+
+.dice {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  opacity: 1;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .dice {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dice-container {
+    border: 12px groove brown;
+    padding: 0;
+  }
+
+  .loader-image {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.scoreboard {
+  padding-bottom: 5rem;
+}
+
+.active-player {
+  background-color: rgb(214, 249, 214) !important;
+}
+
+table td,
+table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.player-boards {
+  width: 100%;
+  height: auto;
+}
+
+.player-board {
+  background-color: #ebd5bd;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+  clear: both;
+  padding: 5px 3px;
+}
+
+.player-board {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.btn-primary {
+  &:disabled {
+    opacity: 0.85 !important;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .3) !important;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+  background-color: #f8f9fa;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
